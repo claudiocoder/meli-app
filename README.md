@@ -4,5 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Features of the Project
 
-- [commitlint]: https://commitlint.js.org/#/
-- [husky]: https://www.npmjs.com/package/husky
+- Application structure : LIFT
+
+* [commitlint]: https://commitlint.js.org/#/
+* [husky]: https://www.npmjs.com/package/husky
+* [normalizecss]: https://necolas.github.io/normalize.css/
