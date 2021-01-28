@@ -4,4 +4,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Features of the Project
 
-- commitlint
+- [commitlint]: https://commitlint.js.org/#/
+- [husky]: https://www.npmjs.com/package/husky
