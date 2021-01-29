@@ -1,4 +1,4 @@
-<div class="product-item-container">
+<div class="product-item-container" [routerLink]="['./detail', product.id]">
   <img class="image" [src]="product.thumbnail" alt="image-product" />
   <div class="information-product-container">
     <div class="price-container">

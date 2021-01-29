@@ -12,4 +12,11 @@ export class ProductService {
       `https://api.mercadolibre.com/sites/MLA/search?q=${name}`
     );
   }
+
+  getDetailProduct(id: string): any {
+    return this.http.get(
+      `https://api.mercadolibre.com/items/${id}
+      `
+    );
+  }
 }
