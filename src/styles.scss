@@ -1,2 +1,9 @@
 @import "~normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+@import "./app/styles/colors.scss";
+@import "./app/styles/fonts.scss";
+
+body {
+  background: $meli_gray_three;
+  font-family: "Roboto", sans-serif;
+}

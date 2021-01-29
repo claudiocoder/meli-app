@@ -1,0 +1,21 @@
+@import "../styles/colors.scss";
+@import "../styles/fonts.scss";
+@import "../styles/space.scss";
+
+.product-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  margin: auto;
+  margin-top: $s_padding;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.box-product {
+  margin: 0 $s_padding;
+  border-bottom: 1px solid $meli_gray_three;
+}
