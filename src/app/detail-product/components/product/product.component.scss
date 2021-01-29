@@ -1,0 +1,77 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/fonts.scss";
+@import "../../../styles/space.scss";
+
+.detail-product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.image-description {
+  margin: $m_padding;
+  width: 680px;
+  .image {
+    border-radius: 4px;
+    width: 100%;
+    height: 680px;
+    max-width: 680px;
+    max-height: 680px;
+  }
+}
+
+.description-container {
+  .title {
+    margin: $m_padding 0;
+    font-size: 26px;
+    color: $meli_black;
+  }
+  .description {
+    font-size: 16px;
+    color: $meli_gray_two;
+  }
+}
+
+.price-drescription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: $m_padding;
+
+  .ammount {
+    margin-top: $m_padding;
+    font-size: 14px;
+    color: $meli_gray_two;
+  }
+
+  .title {
+    font-size: $meli_black;
+    margin-top: $s_padding;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .price {
+    margin-top: $m_padding;
+    display: flex;
+    font-size: 46px;
+    .cents {
+      margin-top: 4px;
+      font-size: 24px;
+    }
+  }
+  .btn-primary {
+    margin-top: $m_padding;
+    background-color: $meli_blue;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: $s_padding;
+    cursor: pointer;
+    outline: none;
+  }
+}
