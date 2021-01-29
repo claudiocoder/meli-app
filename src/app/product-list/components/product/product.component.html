@@ -1,25 +1,15 @@
 <div class="product-item-container">
-  <img
-    class="image"
-    src="https://source.unsplash.com/random"
-    alt="image-product"
-  />
+  <img class="image" [src]="product.thumbnail" alt="image-product" />
   <div class="information-product-container">
     <div class="price-container">
-      <div class="price">$ 9,000</div>
+      <div class="price">{{ product.price | currency }}</div>
       <img class="imageAvailable" src="assets/ic_shipping@2x.png.png" />
     </div>
     <div class="description-container">
-      <div class="description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet earum
-        laudantium rem provident odit velit repellat. Veritatis nulla odio ipsam
-        officiis quod nemo, ducimus, maiores iste maxime dolorem possimus
-        pariatur.
-      </div>
-      <div class="description">Completo Unico!</div>
+      <div class="description">{{ product.title }}</div>
     </div>
   </div>
   <div class="city-container">
-    <div class="city">Cordoba</div>
+    <div class="city">{{ product.address.state_name }}</div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { ListServiceService } from '../shared/services/list-service.service';
 @Component({
   selector: 'app-product-list',
@@ -6,11 +7,13 @@ import { ListServiceService } from '../shared/services/list-service.service';
   styleUrls: ['./product-list.component.scss'],
 })
 export class ProductListComponent implements OnInit {
-  constructor(private listService: ListServiceService) {
-    this.listService.cart$.subscribe((products) => {
-      console.log('desde lista', products);
+  products: any;
+
+  constructor(private listService: ListServiceService) {}
+
+  ngOnInit(): void {
+    this.listService.cart$.subscribe((products: any) => {
+      this.products = products.results;
     });
   }
-
-  ngOnInit(): void {}
 }

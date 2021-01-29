@@ -5,7 +5,6 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class ListServiceService {
-  private list: any = [];
   private cart = new BehaviorSubject<any[]>([]);
 
   cart$ = this.cart.asObservable();
