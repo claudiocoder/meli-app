@@ -1,13 +1,24 @@
 <div class="search-container">
-  <img class="logo" src="assets/Logo_ML@2x.png.png" alt="meliLogo" />
+  <img
+    class="logo"
+    src="assets/Logo_ML@2x.png.png"
+    alt="meliLogo"
+    [routerLink]="['/']"
+  />
   <div class="search-input-container">
     <input
       placeholder="{{ content.placeholder }}"
       class="inputSearch"
       type="text"
+      [(ngModel)]="productSearch"
     />
     <div class="search-icon-container">
-      <img class="icon" src="assets/ic_Search@2x.png.png" alt="meliAssets" />
+      <img
+        class="icon"
+        src="assets/ic_Search@2x.png.png"
+        alt="meliAssets"
+        (click)="fetchProducts()"
+      />
     </div>
   </div>
 </div>

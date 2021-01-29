@@ -16,13 +16,7 @@ const routes: Routes = [
         (m) => m.DetailProductModule
       ),
   },
-  {
-    path: '**',
-    loadChildren: () =>
-      import('./product-list/product-list.module').then(
-        (m) => m.ProductListModule
-      ),
-  },
+  { path: '**', redirectTo: '/', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
 @NgModule({
