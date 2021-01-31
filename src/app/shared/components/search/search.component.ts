@@ -4,9 +4,6 @@ import { LabelsContent } from '../../interfaces/labels.interface';
 
 import { ListServiceService } from '../../services/list-service.service';
 import { ProductService } from '../../services/product.service';
-
-import { mergeMap, repeat } from 'rxjs/operators';
-import { Observable, ObservableInput } from 'rxjs';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -29,11 +26,14 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {}
 
   fetchProducts(): void {
-    this.productService
-      .getProducts(this.productSearch)
-      .subscribe((response: any) => {
+    this.productService.getProducts(this.productSearch).subscribe(
+      (response: any) => {
         this.foundProduct = response;
         this.listService.updateList(this.foundProduct);
-      });
+      },
+      (error: ErrorEvent) => {
+        console.log('error', error);
+      }
+    );
   }
 }

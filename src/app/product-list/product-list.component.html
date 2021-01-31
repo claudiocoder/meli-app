@@ -1,4 +1,4 @@
-<div class="product-list-container">
+<div class="product-list-container" *ngIf="products">
   <div class="box-product" *ngFor="let product of products">
     <app-product [product]="product"></app-product>
   </div>

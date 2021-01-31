@@ -1,21 +1,20 @@
 <div class="detail-product-container" *ngIf="product$ | async as product">
   <div class="image-description">
-    <img class="image" [src]="product.secure_thumbnail" alt="logo-detail" />
+    <img class="image" [src]="product.item.picture" alt="logo-detail" />
     <div class="description-container">
       <div class="title">Descripción del producto</div>
       <div>
-        {{ product.subititle }}
+        {{ product.item.description }}
       </div>
     </div>
   </div>
   <div class="price-drescription">
     <div class="ammount">
-      {{ product.condition }} - {{ product.initial_quantity }}
-      {{ product.condition }}
+      {{ product.item.condition }} - Vendidos {{ product.item.sold_quantity }}
     </div>
-    <div class="title">{{ product.title }}</div>
+    <div class="title">{{ product.item.title }}</div>
     <div class="price">
-      {{ product.price | currency }}
+      {{ product.item.price.amount | currency }}
     </div>
     <button class="btn-primary">Comprar</button>
   </div>

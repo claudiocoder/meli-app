@@ -23,5 +23,6 @@ export class ProductComponent implements OnInit {
         return this.productService.getDetailProduct(params.id);
       })
     );
+    console.log(this.product$);
   }
 }
