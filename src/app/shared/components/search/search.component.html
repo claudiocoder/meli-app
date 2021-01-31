@@ -7,17 +7,19 @@
       [routerLink]="['/']"
     />
     <div class="search-input-container">
-      <label for="search_meli">
-        <input
-          placeholder="{{ content.placeholder }}"
-          class="inputSearch"
-          type="text"
-          [(ngModel)]="productSearch"
-          (keyup.enter)="fetchProducts()"
-          id="search_meli"
-          tabindex="0"
-        />
-      </label>
+      <label id="search_meli_label" for="search_meli" class="label-search"
+        >Buscar producto</label
+      >
+      <input
+        placeholder="{{ content.placeholder }}"
+        class="inputSearch"
+        type="text"
+        [(ngModel)]="productSearch"
+        (keyup.enter)="fetchProducts()"
+        id="search_meli"
+        tabindex="0"
+        aria-labelledby="search_meli_label"
+      />
       <div class="search-icon-container">
         <img
           class="icon"

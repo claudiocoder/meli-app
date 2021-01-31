@@ -2,20 +2,22 @@
   <div class="image-description">
     <img class="image" [src]="product.item.picture" alt="logo-detail" />
     <div class="description-container">
-      <div class="title">Descripción del producto</div>
+      <div class="title" aria-label="Descripcion del producto">
+        Descripción del producto
+      </div>
       <div>
         {{ product.item.description }}
       </div>
     </div>
   </div>
   <div class="price-drescription">
-    <div class="ammount">
+    <div class="ammount" aria-label="Precios">
       {{ product.item.condition }} - Vendidos {{ product.item.sold_quantity }}
     </div>
     <div class="title">{{ product.item.title }}</div>
-    <div class="price">
+    <div class="price" aria-label="Precio">
       {{ product.item.price.amount | currency }}
     </div>
-    <button class="btn-primary">Comprar</button>
+    <button class="btn-primary" aria-label="Comprar">Comprar</button>
   </div>
 </div>
