@@ -2,7 +2,7 @@
   <img
     class="logo"
     src="assets/Logo_ML@2x.png.png"
-    alt="meliLogo"
+    alt="logo_meli"
     [routerLink]="['/']"
   />
   <div class="search-input-container">
@@ -11,12 +11,14 @@
       class="inputSearch"
       type="text"
       [(ngModel)]="productSearch"
+      (keyup.enter)="fetchProducts()"
+      id="search_meli"
     />
     <div class="search-icon-container">
       <img
         class="icon"
         src="assets/ic_Search@2x.png.png"
-        alt="meliAssets"
+        alt="product_meli"
         (click)="fetchProducts()"
       />
     </div>
