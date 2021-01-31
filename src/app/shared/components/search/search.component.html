@@ -1,26 +1,31 @@
-<div class="search-container">
-  <img
-    class="logo"
-    src="assets/Logo_ML@2x.png.png"
-    alt="logo_meli"
-    [routerLink]="['/']"
-  />
-  <div class="search-input-container">
-    <input
-      placeholder="{{ content.placeholder }}"
-      class="inputSearch"
-      type="text"
-      [(ngModel)]="productSearch"
-      (keyup.enter)="fetchProducts()"
-      id="search_meli"
+<header>
+  <div class="search-container">
+    <img
+      class="logo"
+      src="assets/Logo_ML@2x.png.png"
+      alt="logo_meli"
+      [routerLink]="['/']"
     />
-    <div class="search-icon-container">
-      <img
-        class="icon"
-        src="assets/ic_Search@2x.png.png"
-        alt="product_meli"
-        (click)="fetchProducts()"
-      />
+    <div class="search-input-container">
+      <label for="search_meli">
+        <input
+          placeholder="{{ content.placeholder }}"
+          class="inputSearch"
+          type="text"
+          [(ngModel)]="productSearch"
+          (keyup.enter)="fetchProducts()"
+          id="search_meli"
+          tabindex="0"
+        />
+      </label>
+      <div class="search-icon-container">
+        <img
+          class="icon"
+          src="assets/ic_Search@2x.png.png"
+          alt="product_meli"
+          (click)="fetchProducts()"
+        />
+      </div>
     </div>
   </div>
-</div>
+</header>
