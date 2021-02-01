@@ -21,3 +21,5 @@ Features of the Project
 - [lift]: https://angular.io/guide/styleguide#lift
 
 ## Performance
+
+![Lighthouse REPORT](./src/assets/stats.PNG);
