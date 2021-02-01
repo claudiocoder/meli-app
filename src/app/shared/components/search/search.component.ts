@@ -12,6 +12,7 @@ import { ProductService } from '../../services/product.service';
 export class SearchComponent implements OnInit {
   productSearch;
   foundProduct: any;
+  errorGetProduct: boolean;
 
   content: LabelsContent;
 
@@ -21,6 +22,7 @@ export class SearchComponent implements OnInit {
   ) {
     this.content = labels;
     this.productSearch = '';
+    this.errorGetProduct = false;
   }
 
   ngOnInit(): void {}
@@ -31,8 +33,8 @@ export class SearchComponent implements OnInit {
         this.foundProduct = response;
         this.listService.updateList(this.foundProduct);
       },
-      (error: ErrorEvent) => {
-        console.log('error', error);
+      (error) => {
+        this.errorGetProduct = true;
       }
     );
   }

@@ -20,9 +20,9 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
     this.product$ = this.route.params.pipe(
       switchMap((params: Params) => {
+        console.log(params.id);
         return this.productService.getDetailProduct(params.id);
       })
     );
-    console.log(this.product$);
   }
 }
