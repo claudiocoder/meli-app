@@ -24,13 +24,15 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  width: 50%;
 
   .inputSearch {
     font-family: "Roboto", sans-serif;
     padding: $sm_padding;
     color: $meli_black;
     font-size: 14px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 16px;
     border: none;
     border-top-left-radius: 4px;
@@ -39,11 +41,11 @@
     transition: 1s;
 
     @media (min-width: 720px) {
-      width: 400px;
+      max-width: 400px;
     }
 
     @media (min-width: 1200px) {
-      width: 800px;
+      max-width: 800px;
     }
   }
 }

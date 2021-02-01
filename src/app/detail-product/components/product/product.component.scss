@@ -4,22 +4,26 @@
 
 .detail-product-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: white;
   width: 90%;
   margin: auto;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .image-description {
   margin: $m_padding;
-  width: 680px;
+  max-width: 680px;
   .image {
     border-radius: 4px;
     width: 100%;
-    height: 680px;
+    height: 100%;
     max-width: 680px;
     max-height: 680px;
   }

@@ -12,14 +12,19 @@
 
   .image {
     border-radius: 4px;
-    width: 180px;
-    height: 180px;
+    width: 40%;
+    height: 100%;
+    max-width: 180px;
+    max-height: 180px;
     margin-right: $s_padding;
   }
 }
 
 .information-product-container {
-  width: 75%;
+  width: 50%;
+  @media (min-width: 1200px) {
+    width: 75%;
+  }
 }
 
 .price-container {
@@ -52,7 +57,12 @@
 
 .city-container {
   .city {
+    display: none;
     font-size: 12px;
     color: $meli_gray_two;
+
+    @media (min-width: 720px) {
+      display: flex;
+    }
   }
 }

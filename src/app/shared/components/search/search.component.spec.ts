@@ -49,4 +49,9 @@ describe('SearchComponent', () => {
     component.fetchProducts();
     expect(component.errorGetProduct).toEqual(true);
   });
+
+  it('should emprty string product', () => {
+    component.reset();
+    expect(component.productSearch).toEqual('');
+  });
 });
