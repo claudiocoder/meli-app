@@ -28,3 +28,25 @@ Features of the Project
 ## Test App
 
 [production](https://meli-app-ng.herokuapp.com)
+
+## RUN
+
+Run:
+
+```bash
+npm install
+```
+
+Development enviroment:
+
+Run
+
+```bash
+npm run dev:ssr
+```
+
+Prodcution enviroment
+
+```bash
+npm run build:ssr
+```
