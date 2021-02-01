@@ -2,6 +2,24 @@
 @import "../styles/fonts.scss";
 @import "../styles/space.scss";
 
+.container-categories {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: $s_padding;
+  color: $meli_gray_two;
+  .categories {
+    margin-right: $s_padding;
+    &:last-child {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
 .product-list-container {
   display: flex;
   flex-direction: column;

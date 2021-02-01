@@ -1,3 +1,13 @@
+<div *ngIf="categories">
+  <div class="container-categories">
+    <div
+      *ngFor="let categorie of categories | slice: 0:4; let i = index"
+      class="categories"
+    >
+      {{ categorie }}<span> > </span>
+    </div>
+  </div>
+</div>
 <div class="product-list-container" *ngIf="products">
   <div class="box-product" *ngFor="let product of products">
     <app-product [product]="product"></app-product>

@@ -26,6 +26,11 @@
     height: 100%;
     max-width: 680px;
     max-height: 680px;
+
+    @media (min-width: 1200px) {
+      width: 680px;
+      height: 680px;
+    }
   }
 }
 
