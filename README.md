@@ -15,11 +15,15 @@ Features of the Project
 - Postman Collection
 - Heroku Integration
 
-- [commitlint]: https://commitlint.js.org/#/
-- [husky]: https://www.npmjs.com/package/husky
-- [normalizecss]: https://necolas.github.io/normalize.css/
-- [lift]: https://angular.io/guide/styleguide#lift
+[commitlint]: https://commitlint.js.org/#/
+[husky]: https://www.npmjs.com/package/husky
+[normalizecss]: https://necolas.github.io/normalize.css/
+[lift]: https://angular.io/guide/styleguide#lift
 
 ## Performance
 
-![Lighthouse REPORT](./src/assets/stats.PNG);
+![Lighthouse REPORT](./src/assets/stats.PNG)
+
+## Test App
+
+[production]: https://meli-app-ng.herokuapp.com
