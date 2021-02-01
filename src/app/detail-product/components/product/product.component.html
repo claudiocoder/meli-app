@@ -12,7 +12,8 @@
   </div>
   <div class="price-drescription">
     <div class="ammount" aria-label="Precios">
-      {{ product.item.condition }} - Vendidos {{ product.item.sold_quantity }}
+      {{ product.item.condition === "new" ? "Nuevo" : "Agotado " }} - Vendidos
+      {{ product.item.sold_quantity }}
     </div>
     <div class="title">{{ product.item.title }}</div>
     <div class="price" aria-label="Precio">

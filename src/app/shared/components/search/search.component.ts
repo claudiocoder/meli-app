@@ -41,5 +41,6 @@ export class SearchComponent implements OnInit {
 
   reset(): void {
     this.productSearch = '';
+    this.listService.updateList(this.productSearch);
   }
 }
