@@ -16,10 +16,10 @@ Features of the Project
 - Heroku Integration
 - Commit Lint
 
-[commitlint]: (https://commitlint.js.org/#/)
-[husky]: (https://www.npmjs.com/package/husky)
-[normalizecss]: (https://necolas.github.io/normalize.css/)
-[lift]: (https://angular.io/guide/styleguide#lift)
+[commitlint](https://commitlint.js.org/#/)
+[husky](https://www.npmjs.com/package/husky)
+[normalizecss](https://necolas.github.io/normalize.css/)
+[LIFT](https://angular.io/guide/styleguide#lift)
 
 ## Performance
 
@@ -27,4 +27,4 @@ Features of the Project
 
 ## Test App
 
-[production]: (https://meli-app-ng.herokuapp.com)
+[production](https://meli-app-ng.herokuapp.com)
